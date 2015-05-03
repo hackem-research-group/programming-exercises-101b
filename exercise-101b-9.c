@@ -1,3 +1,7 @@
+/*
+Si para el programa del Ejemplo 4.4 se realizara una nueva ronda de llamados consecutivos a cada una de las tres funciones involucradas, ¿Cuáles serían los valores que se visualizarían en la salida estándar?
+R: Se aumentan 2 nuevas filas por cada función en este caso 6, ya que tenemos 3 funciones, la de la función 1 sale igual, sin alterarse, pero de la función 2 y de la función 3, podemos notar que se incremento en 1 al numero que dio como resultado en el programa sin alterarlo.
+*/
 #include <stdio.h>
 
 void funcion1 (void);

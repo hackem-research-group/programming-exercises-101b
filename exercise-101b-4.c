@@ -1,8 +1,13 @@
-#include "stdio.h"
-#include "stdlib.h"
-#include "math.h"
+//Bibliotecas
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+//Variables Globales
 int a,b,c,d;
 float ra,ta,de;
+
+//Funciones
 float raiz1(int x, int y, int z)
 {
     ra=(-(float)y+sqrt((float)d))/(2*(float)x);
@@ -13,13 +18,16 @@ float raiz2(int x, int y, int z)
     ta=(-(float)y-sqrt((float)d))/(2*(float)x);
     return ta;
 }
-int dis(int x, int y, int z){
-de=(y*y)-(4*x*z);
-return de;
+int dis(int x, int y, int z)
+{
+    de=(y*y)-(4*x*z);
+    return de;
 }
 
-main ()
+//Funcion Principal
+int main ()
 {
+	//Ingreso de Datos
     printf("Programa para determinar las raices reales de una ecuacion:\n");
     printf("de la forma Ax^2 + Bx +C = 0\n");
     do
@@ -32,6 +40,8 @@ main ()
     scanf("%i",&b);
     printf("\nEl valor de C:  ");
     scanf("%i",&c);
+	
+	//Calculos y/o Resultados
     d=dis(a, b, c);
 
     if(d<0)
@@ -43,4 +53,6 @@ main ()
         printf("La Primera raiz es: %.2f",raiz1(a, b, c));
         printf("\nLa Segunda raiz es: %.2f",raiz2(a, b, c));
     }
+	//Fin del Programa
+	return 0;
 }

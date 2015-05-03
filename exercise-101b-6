@@ -1,0 +1,31 @@
+#include "stdio.h"
+#include "stdlib.h"
+
+int a,b,c;
+
+int coient(int x, int y)
+{
+    do
+    {
+        a=a-b;
+        c++;
+    }
+    while(a>0);
+    return c;
+}
+
+int main()
+{
+    printf("Programa de calculo de Cociente de dos numeros enteros.\n");
+    do
+    {
+        printf("\nEl valor de a:  ");
+        scanf("%i",&a);
+        printf("El valor de b:  ");
+        scanf("%i",&b);
+    }
+    while(b==0 || a==0);
+    c=0;
+    printf("El cociente entre a y b es: %i",coient(a,b));
+    return 0;
+}
